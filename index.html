@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Qualificador de Vinhos</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+<main>
+
+    <body>
+        <!-- Cabeçalho de informações do sistema -->
+        <header>
+            <div class="title">
+                <h2>Bem-Vindo ao Qualificador de Vinhos</h2>
+                <p>Este sistema foi desenvolvido para auxiliar na apuração da qualidade de vinhos.</p>
+                <p>Para isso, basta preencher os campos abaixo com os dados do vinho e clicar em "Qualificar".</p>
+            </div>
+        </header>
+
+        <!-- Opções para adicionar um novo item -->
+
+        <table class="tableprincipal">
+            <tr>
+                <td>
+                    <section class="newItem">
+                        <input type="text" id="newInput" placeholder="Name of wine"> <br>
+                        <input type="number" id="newtype" placeholder="Type of wine"> <br>
+                        <input type="number" id="newfixedacidity" placeholder="Fixed acidity"> <br>
+                        <input type="number" id="newvolatileacidity" placeholder="Volatile acidity"> <br>
+                        <input type="number" id="newcitricacid" placeholder="Citric acid"> <br>
+                        <input type="number" id="newresidualsugar" placeholder="Residual sugar"> <br>
+                        <input type="number" id="newchlorides" placeholder="chlorides"> <br>
+                        <input type="number" id="newfreesulfurdioxide" placeholder="Free sulfur dioxide"> <br>
+                        <input type="number" id="newtotalsulfurdioxide" placeholder="Total sulfur dioxide"> <br>
+                        <input type="number" id="newdensity" placeholder="Density"> <br>
+                        <input type="number" id="newpH" placeholder="PH"> <br>
+                        <input type="number" id="newsulphates" placeholder="Sulphates"> <br>
+                        <input type="number" id="newalcohol" placeholder="Alcohol"> <br><br>
+                        <span onclick="newItem()" class="addBtn">Qualificar</span>
+                    </section>
+                </td>
+
+                <td>
+                    <section class="items">
+                        <table id="myTable" class="tableCont">
+                            <tr>
+                                <th>Name of wine</th>
+                                <th>Red=1, White=2</th>
+                                <th>Fixed acidity</th>
+                                <th>Volatile acidity</th>
+                                <th>Citric acid</th>
+                                <th>Residual sugar</th>
+                                <th>Chlorides</th>
+                                <th>Free sulfur dioxide</th>
+                                <th>Total sulfur dioxide</th>
+                                <th>Density</th>
+                                <th>PH</th>
+                                <th>Sulphates</th>
+                                <th>Alcohol</th>
+                                <th>Quality</th>
+                                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15"
+                                        height="15">
+                                </th>
+                                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+                            </tr>
+                        </table>
+                    </section>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <!-- Tabela com items existentes -->
+
+
+
+
+</main>
+
+
+
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
